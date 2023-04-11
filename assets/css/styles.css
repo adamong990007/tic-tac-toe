@@ -1,0 +1,78 @@
+.motherdiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideA {
+  height: 150px;
+  max-width: 100vw;
+}
+
+.tictac-board {
+  height: 364px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideB {
+  height: 150px;
+}
+
+.player-name {
+  width: 200px;
+  height: 75px;
+  font-size: 47px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.side {
+  height: 100px;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 360px;
+  height: 664px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  font-size: 60px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.XorY {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 31px;
+  background: #7bda84;
+}
+
+.messageClass {
+  width: 360px;
+  height: 50px;
+}
+
+.gamemessage {
+  text-align: center;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 30px;
+}
+
