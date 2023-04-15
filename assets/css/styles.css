@@ -23,6 +23,13 @@
   height: 150px;
 }
 
+.player-name:disabled {
+}
+
+.player-name:disabled {
+  background: white;
+}
+
 .player-name {
   width: 200px;
   height: 75px;
