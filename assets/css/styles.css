@@ -12,7 +12,7 @@
 }
 
 .tictac-board {
-  height: 364px;
+  height: 330px;
   width: 360px;
   display: flex;
   justify-content: center;
@@ -55,23 +55,23 @@
   width: 100px;
   height: 100px;
   background-color: lightgray;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   border-radius: 30px;
 }
 
 .XorY {
-  width: 75px;
+  width: 99px;
   height: 75px;
   border-radius: 20px;
   text-align: center;
-  font-size: 31px;
+  font-size: 30px;
   background: #7bda84;
 }
 
 .messageClass {
   width: 360px;
-  height: 50px;
+  height: 42px;
 }
 
 .gamemessage {
@@ -81,5 +81,30 @@
   justify-content: center;
   align-content: center;
   font-size: 30px;
+}
+
+.arrows {
+  width: 90px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: darksalmon;
+}
+
+.previousandnext {
+  height: 50px;
+  text-align: center;
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+#bomb {
+  width: 72px;
+  text-align: center;
+  background-color: crimson;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
 }
 
