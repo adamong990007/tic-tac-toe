@@ -54,6 +54,7 @@ function choice(decision){
                 formatter(x,y,this);
                 moveLogger(x,y,this,i,selected,old);
                 nextTurnMessage(selected);
+                drawNotification();
                 checker();
                 return [x,y];
             }
@@ -128,23 +129,6 @@ resetbutton.addEventListener("click", resetGame);
 function resetGame(){
     window.location.reload();
 }
-
-// //Create a Function that Stringify BoardState 
-// function stringifyboardState(savedboardState){
-//     const storeboardState = JSON.stringify(savedboardState);
-//     localStorage.setItem("boardState",storeboardState);
-// }
-
-// //Create a function that formats boardstate
-// function storeboardState(){
-//     const savedboardState = {
-//         boardState: boardState,
-//         PlayerA: namePlayerA.value,
-//         PlayerB: namePlayerB.value,
-//         SaveDate: Date()
-//     };
-//     stringifyboardState(savedboardState);
-// }
 
 function nextTurnMessage(selected){
     let PlayerA = namePlayerA.value;
@@ -267,10 +251,10 @@ function enterPlayerName(){
             break;
         case (namePlayerA.value!== "" && namePlayerB.value!== ""):
             xPlayerA.disabled = false;
-            gameMessageA.textContent = `Hi!! ${namePlayerA.value}`;
+            gameMessageA.textContent = `Hi! ${namePlayerA.value} press the green button to go first`;
             xPlayerA.style.backgroundColor = "green";
             xPlayerB.disabled = false;
-            gameMessageB.textContent = `Hi!! ${namePlayerB.value}`;
+            gameMessageB.textContent = `Hi! ${namePlayerB.value} press the green button to go first`;
             xPlayerB.style.backgroundColor = "green"; 
             break;
     }
@@ -288,6 +272,14 @@ function displayarrows(status){
 //Create function to hide the TicTacToe
 function hideTictac(status){
     board.style.display = status;
+}
+//Create function to notify players of a draw
+function drawNotification(){
+    if (loggeditemsLength === 9){
+        gameMessageA.textContent = `No One Won!, ${namePlayerA.value}💩`;
+        gameMessageB.textContent = `No One Won!, ${namePlayerB.value}💩`;
+        displayarrows("initial");
+    }
 }
 
 // Create function to Notify Player winner
